@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Freelancer jobs tracker",
+  "description": "*** Freelancer Jobs.ks ***",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png",
+    "16": "icon.png",
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["search.js"],
+      "matches": [
+        "http://www.freelancer.com/search/projects*",
+        "https://www.freelancer.com/search/projects*"
+      ]
+    }
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": [ "bk.js" ]
+  },
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "storage"
+  ]
+}
