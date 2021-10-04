@@ -11,7 +11,7 @@ function filterSkills(skills = []) {
             return true;
         }
     }
-    return false;
+    return false; 
 }
 
 window.onload = async function() { 
