@@ -3,7 +3,7 @@ const delay = (duration) => new Promise(resolve => setTimeout(resolve, duration)
 const REMAINING_TIME = 10000;
 const REFRESH_TIME = 2000;
 const MAIN_SKILLS = ['PHP', 'HTML', 'JavaScript', 'Python', 'SEO', 'C# Programming', 'Node.js', 'React.js', 'Laravel', 'Web Scraping', 'AngularJS', 'Blockchain', 'Django', 'Ethereum', 'Full Stack Development', 'ASP.NET', 'Vue.js', 'Express JS', 'React.js Framework', 'Google Firebase', 'Typescript', 'Bitcoin', 'MongoDB', 'Solidity', 'Angular', 'AJAX', 'Frontend Development', 'RESTful API', '.NET Core', 'RESTful', 'Redux.js', 'Vue.js Framework', 'Angular Material', 'Three.js', 'ASP.NET MVC', 'ASP', 'WPF', 'Socket IO', 'Dthreejs', 'XAML', 'RxJS'];
-const MAIN_SCORE = 4.5;
+const MAIN_SCORE = 4.3;
 
 function filterSkills(skills = []) {
     for ( skill of skills ) {
